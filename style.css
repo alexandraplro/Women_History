@@ -52,21 +52,21 @@ header input[type="search"] {
 
 /* Main Body Styling */
 main {
-    display: flex;                 /* Flexbox for side-by-side panels */
-    flex-direction: row;           /* Panels in a horizontal row */
+    display: flex;                 /* Enable flexbox for side-by-side layout */
+    flex-direction: row;           /* Arrange children (panels) in a row */
     gap: 1rem;                     /* Space between panels */
-    flex: 1;                       /* Let main fill available space */
-    padding: 1rem;
+    padding: 1rem;                 /* Padding for the main container */
 }
 
 /* Left and Right Panels */
 .panel {
-    flex: 1;                       /* Equal width for both panels */
-    border: 1px solid #ddd;        /* Border for clarity */
-    display: flex;
-    flex-direction: column;        /* Stack sections vertically */
-    gap: 1rem;                     /* Space between sections inside panels */
+    flex: 1;                       /* Each panel takes up equal width */
     background-color: #f9f9f9;     /* Light gray background */
+    border: 1px solid #ddd;        /* Optional border for clarity */
+    display: flex;
+    flex-direction: column;        /* Stack sections inside each panel */
+    gap: 1rem;                     /* Space between sections inside panels */
+    min-height: 300px;             /* Minimum height for visibility */
 }
 
 /* Image Styling for Right Panel - Section 1 */
