@@ -79,6 +79,14 @@ main {
     display: block; /* Removes extra spacing around the image */
 }
 
+/* Image styling for section 1 in the right panel */
+.panel section img {
+    width: 100%;  /* Full width */
+    height: 100%; /* Full height */
+    object-fit: cover; /* Ensures the image fills the section without distortion */
+    display: block; /* Removes extra spacing around the image */
+}
+
 /* Footer styling */
 footer {
     background-color: #333;
