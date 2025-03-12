@@ -47,28 +47,21 @@ header input[type="search"] {
     border-radius: 4px;
 }
 
-/* Main body styling */
+/* Main body styling: Use flexbox for layout */
 main {
-    flex: 1;
-    display: flex;
+    display: flex; /* Enables side-by-side layout for child elements */
+    flex-direction: row; /* Ensures the panels are in a horizontal row */
+    gap: 1rem; /* Space between the two panels */
+    flex: 1; /* Allow the main section to grow and fill space */
 }
 
-/* Panel styling */
+/* Left and Right Panel Styling */
 .panel {
-    flex: 1;
-    padding: 1rem;
-    border: 1px solid #ddd;
+    flex: 1; /* Each panel takes up equal width */
+    border: 1px solid #ddd; /* Optional border for clarity */
     display: flex;
-    flex-direction: column;
-    gap: 1rem; /* Space between sections */
-}
-
-/* Section styling (equal size within panels) */
-.panel section {
-    flex: 1;
-    border: 1px solid #ccc;
-    padding: 1rem;
-    background-color: #f9f9f9;
+    flex-direction: column; /* Ensures sections inside panels stack vertically */
+    gap: 1rem; /* Space between sections inside the panels */
 }
 
 /* Image styling for section 1 in the left panel */
