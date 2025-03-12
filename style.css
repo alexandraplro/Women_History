@@ -71,11 +71,14 @@ main {
 
 /* Image Styling for Right Panel - Section 1 */
 .panel section img {
-    width: 50%;        /* Full width */
-    height: 50%;       /* Full height */
-    object-fit: cover;  /* Ensures the image fills the section without distortion */
-    display: block;     /* Removes extra space around the image */
+    width: 100%;         /* Make the image take up the full width of the panel */
+    height: 100%;        /* Make the image take up the full height of the panel */
+    object-fit: cover;   /* Ensures the image fills the area without distortion */
+    border: 1px solid #ddd; /* Optional: Add a border for better visibility */
+    border-radius: 8px;  /* Optional: Add rounded corners */
+    display: block;      /* Removes extra spacing around the image */
 }
+
 
 /* Footer Styling */
 footer {
