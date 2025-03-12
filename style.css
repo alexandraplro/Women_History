@@ -71,8 +71,8 @@ main {
 
 /* Image Styling for Right Panel - Section 1 */
 .panel section img {
-    width: 100%;        /* Full width */
-    height: 100%;       /* Full height */
+    width: 50%;        /* Full width */
+    height: 50%;       /* Full height */
     object-fit: cover;  /* Ensures the image fills the section without distortion */
     display: block;     /* Removes extra space around the image */
 }
