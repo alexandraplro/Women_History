@@ -1,79 +1,90 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
-/* Header styling */
-header {
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Top Section */
+.top-section {
     background-color: #00008B; /* Dark blue background */
-    color: #FFD700;           /* Gold text for the title */
     padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center;
 }
 
-/* Styling for the title (first div in header) */
-header div:first-child {
+/* Title Styling in Top Section */
+.top-section .title h1 {
     font-family: 'Lobster', cursive; /* Fancy Lobster font */
-    font-size: 2rem;                 /* Slightly larger font size */
-    font-weight: bold;               /* Bold styling for emphasis */
-    color: #FFD700;                  /* Gold text color */
+    font-size: 2.5rem;              /* Larger size for emphasis */
+    color: #FFD700;                 /* Gold color for the title */
+    margin: 0;
 }
 
-/* Styling for the menu links */
-header .menu a {
-    color: white; /* White text for the menu bar */
-    text-decoration: none; /* Remove underline for cleaner look */
-    margin-right: 1rem;
+/* Menu Bar Styling in Top Section */
+.menu-bar {
+    margin-top: 1rem;
 }
 
-header .menu a:hover {
-    text-decoration: underline; /* Underline links on hover for interactivity */
+.menu-bar a {
+    color: white;                   /* White text for menu links */
+    margin: 0 1rem;
+    text-decoration: none;          /* Remove underline for cleaner look */
+    font-size: 1.2rem;              /* Slightly larger font size */
 }
 
-/* Styling for the search input */
+.menu-bar a:hover {
+    text-decoration: underline;     /* Add underline on hover */
+}
+
+/* Search Input Styling */
 header input[type="search"] {
     padding: 0.5rem;
-    border: 1px solid #FFD700; /* Gold border for consistency */
+    border: 1px solid #FFD700;     /* Gold border for consistency */
     border-radius: 4px;
 }
 
-/* Main body styling: Use flexbox for layout */
+/* Main Body Styling */
 main {
-    display: flex; /* Enables side-by-side layout for child elements */
-    flex-direction: row; /* Ensures the panels are in a horizontal row */
-    gap: 1rem; /* Space between the two panels */
-    flex: 1; /* Allow the main section to grow and fill space */
+    display: flex;                 /* Flexbox for side-by-side panels */
+    flex-direction: row;           /* Panels in a horizontal row */
+    gap: 1rem;                     /* Space between panels */
+    flex: 1;                       /* Let main fill available space */
+    padding: 1rem;
 }
 
-/* Left and Right Panel Styling */
+/* Left and Right Panels */
 .panel {
-    flex: 1; /* Each panel takes up equal width */
-    border: 1px solid #ddd; /* Optional border for clarity */
+    flex: 1;                       /* Equal width for both panels */
+    border: 1px solid #ddd;        /* Border for clarity */
     display: flex;
-    flex-direction: column; /* Ensures sections inside panels stack vertically */
-    gap: 1rem; /* Space between sections inside the panels */
+    flex-direction: column;        /* Stack sections vertically */
+    gap: 1rem;                     /* Space between sections inside panels */
+    background-color: #f9f9f9;     /* Light gray background */
 }
 
-/* Image styling for section 1 in the left panel */
+/* Image Styling for Right Panel - Section 1 */
 .panel section img {
-    width: 100%;  /* Full width */
-    height: 100%; /* Full height */
-    object-fit: cover; /* Ensures the image fills the section without distortion */
-    display: block; /* Removes extra spacing around the image */
+    width: 100%;        /* Full width */
+    height: 100%;       /* Full height */
+    object-fit: cover;  /* Ensures the image fills the section without distortion */
+    display: block;     /* Removes extra space around the image */
 }
 
-/* Image styling for section 1 in the right panel */
+/* Image Styling */
 .panel section img {
-    width: 100%;  /* Full width */
-    height: 100%; /* Full height */
-    object-fit: cover; /* Ensures the image fills the section without distortion */
-    display: block; /* Removes extra spacing around the image */
+    width: 100%;                   /* Full width */
+    height: 100%;                  /* Full height */
+    object-fit: cover;             /* Ensures image fills section */
+    display: block;                /* Removes extra spacing */
 }
 
-/* Footer styling */
+/* Footer Styling */
 footer {
-    background-color: #FFD700;
-    color: darkblue;
+    background-color: #FFD700;     /* Gold background */
+    color: darkblue;               /* Dark blue text color */
     text-align: center;
     padding: 1rem;
 }
