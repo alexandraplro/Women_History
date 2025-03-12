@@ -12,7 +12,9 @@ body {
 .top-section {
     background-color: #00008B; /* Dark blue background */
     padding: 1rem;
-    text-align: center;
+    display: flex;             /* Flexbox for layout */
+    justify-content: space-between; /* Space between title and menu bar */
+    align-items: center;       /* Vertical alignment */
 }
 
 /* Title Styling in Top Section */
@@ -25,7 +27,9 @@ body {
 
 /* Menu Bar Styling in Top Section */
 .menu-bar {
-    margin-top: 1rem;
+    background-color: #00008B;      /* Dark blue background for menu bar */
+    padding: 0.5rem;                /* Padding for better spacing */
+    border-radius: 5px;             /* Optional: Rounded edges for design */
 }
 
 .menu-bar a {
@@ -71,14 +75,6 @@ main {
     height: 100%;       /* Full height */
     object-fit: cover;  /* Ensures the image fills the section without distortion */
     display: block;     /* Removes extra space around the image */
-}
-
-/* Image Styling */
-.panel section img {
-    width: 100%;                   /* Full width */
-    height: 100%;                  /* Full height */
-    object-fit: cover;             /* Ensures image fills section */
-    display: block;                /* Removes extra spacing */
 }
 
 /* Footer Styling */
