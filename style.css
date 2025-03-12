@@ -1,21 +1,10 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
-/* General styling for the body */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: snow;
-}
-
 /* Header styling */
 header {
     background-color: #00008B; /* Dark blue background */
-    color: #FFD700;           /* Gold text */
+    color: #FFD700;           /* Gold text for the title */
     padding: 1rem;
     display: flex;
     justify-content: space-between;
@@ -25,26 +14,38 @@ header {
 /* Styling for the title (first div in header) */
 header div:first-child {
     font-family: 'Lobster', cursive; /* Fancy Lobster font */
-    font-size: 1.8rem;              /* Emphasized size */
-    font-weight: bold;              /* Bold title */
+    font-size: 2rem;                 /* Slightly larger font size */
+    font-weight: bold;               /* Bold styling for emphasis */
+    color: #FFD700;                  /* Gold text color */
 }
 
-/* Styling for header links */
+/* Styling for the menu links */
 header .menu a {
-    color: #FFD700; /* Gold text for links */
-    text-decoration: none;
+    color: white; /* White text for the menu bar */
+    text-decoration: none; /* Remove underline for cleaner look */
     margin-right: 1rem;
 }
 
 header .menu a:hover {
-    text-decoration: underline; /* Underline links on hover */
+    text-decoration: underline; /* Underline links on hover for interactivity */
 }
 
 /* Styling for the search input */
 header input[type="search"] {
     padding: 0.5rem;
-    border: 1px solid #FFD700; /* Gold border for visual consistency */
+    border: 1px solid #FFD700; /* Gold border for consistency */
     border-radius: 4px;
+}
+
+/* General styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: snow;
 }
 
 /* Main body styling: Use flexbox for layout */
@@ -82,8 +83,8 @@ main {
 
 /* Footer styling */
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #FFD700;
+    color: darkblue;
     text-align: center;
     padding: 1rem;
 }
