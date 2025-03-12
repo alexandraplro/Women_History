@@ -12,79 +12,78 @@ body {
 .top-section {
     background-color: midnightblue; /* Dark blue background */
     padding: 1rem;
-    display: flex;             /* Flexbox for layout */
+    display: flex;
     justify-content: space-between; /* Space between title and menu bar */
-    align-items: center;       /* Vertical alignment */
+    align-items: center; /* Vertical alignment */
 }
 
 /* Title Styling in Top Section */
 .top-section .title h1 {
     font-family: 'Lobster', cursive; /* Fancy Lobster font */
-    font-size: 2.5rem;              /* Larger size for emphasis */
-    color: white;                 /* Gold color for the title */
+    font-size: 2.5rem;
+    color: white; /* White color */
     margin: 0;
 }
 
 /* Menu Bar Styling in Top Section */
 .menu-bar {
-    background-color: midnightbluer;      /* Dark blue background for menu bar */
-    padding: 0.5rem;                /* Padding for better spacing */
-    border-radius: 5px;             /* Optional: Rounded edges for design */
+    background-color: midnightblue; /* Correct dark blue background */
+    padding: 0.5rem;
+    border-radius: 5px; /* Optional: Rounded edges */
 }
 
 .menu-bar a {
-    color: white;                   /* White text for menu links */
+    color: white; /* White text for menu links */
     margin: 0 1rem;
-    text-decoration: none;          /* Remove underline for cleaner look */
-    font-size: 1.2rem;              /* Slightly larger font size */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.2rem; /* Slightly larger font */
 }
 
 .menu-bar a:hover {
-    text-decoration: underline;     /* Add underline on hover */
+    text-decoration: underline; /* Add underline on hover */
 }
 
 /* Search Input Styling */
 header input[type="search"] {
     padding: 0.5rem;
-    border: 1px solid #FFD700;     /* Gold border for consistency */
+    border: 1px solid #FFD700; /* Gold border for consistency */
     border-radius: 4px;
 }
 
 /* Main Body Styling */
 main {
-    display: flex;                 /* Enable flexbox for side-by-side layout */
-    flex-direction: row;           /* Arrange children (panels) in a row */
-    gap: 1rem;                     /* Space between panels */
-    padding: 1rem;                 /* Padding for the main container */
+    display: flex; /* Enable flexbox for side-by-side layout */
+    flex-direction: row; /* Arrange children (panels) in a row */
+    gap: 1rem; /* Space between panels */
+    padding: 1rem; /* Padding for the main container */
 }
 
 /* Left and Right Panels */
 .panel {
-    flex: 1;                       /* Each panel takes up equal width */
-    background-color: #f9f9f9;     /* Light gray background */
-    border: 1px solid #ddd;        /* Optional border for clarity */
+    flex: 1; /* Each panel takes up equal width */
+    background-color: #f9f9f9; /* Light gray background */
+    border: 1px solid #ddd; /* Optional border for clarity */
     display: flex;
-    flex-direction: column;        /* Stack sections inside each panel */
-    gap: 1rem;                     /* Space between sections inside panels */
-    min-height: 300px;             /* Minimum height for visibility */
+    flex-direction: column; /* Stack sections inside each panel */
+    gap: 1rem; /* Space between sections */
+    min-height: 300px; /* Minimum height for visibility */
 }
 
 /* Image Styling for Right Panel - Section 1 */
 .panel section img {
-    width: 100%;         /* Make the image take up the full width of the panel */
-    height: 100%;        /* Make the image take up the full height of the panel */
-    object-fit: cover;   /* Ensures the image fills the area without distortion */
-    border: 1px solid #ddd; /* Optional: Add a border for better visibility */
-    border-radius: 8px;  /* Optional: Add rounded corners */
-    display: block;      /* Removes extra spacing around the image */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    object-fit: cover; /* Ensures the image fills the area without distortion */
+    border: 1px solid #ddd; /* Optional: Border around the image */
+    border-radius: 8px; /* Optional: Rounded corners */
+    display: block; /* Removes extra spacing */
 }
-
 
 /* Footer Styling */
 footer {
     font-family: Arial, sans-serif;
-    background-color: AliceBlue;     /* Gold background */
-    color: Navy Blazer;               /* Dark blue text color */
+    background-color: aliceblue; /* Optional light blue background */
+    color: navy; /* Corrected dark blue text color */
     text-align: center;
     padding: 1rem;
 }
